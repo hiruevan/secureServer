@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Vault System</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <h2>Dashboard</h2>
+    <p><strong>Username:</strong> <span id="disp-username"></span></p>
+    <p><strong>Name:</strong> <span id="disp-name"></span></p>
+    <textarea id="vault" placeholder="Your vault data here..." rows="6" cols="50"></textarea><br>
+    <button id="save-vault">Save Vault</button>
+    <h3 id="admin-section-title" style="display:none;">All Users (Admin Only)</h3>
+    <pre id="all-users" style="display:none;"></pre>
+    <button id="logout">Logout</button>
+    <p>In a security breach? <a href="change-password.html">Change Password</a></p>
+    <p id="dashboard-message"></p>
+  </div>
+  <script src="SecureServer/helpers.js"></script>
+  <script src="code/app.js"></script>
+</body>
+</html>

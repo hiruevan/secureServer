@@ -1,0 +1,217 @@
+[2025-12-20 16:27:19] [33mCORRUPTED ENCRYPTED FILE[0m: C:\Users\hirue\Documents\JS Projects\Security-Project\v5\backend\SecureServer\data\users.json (Expecting value: line 1 column 1 (char 0))[0m[0m
+[2025-12-20 16:27:19] [33mRESETTING ENCRYPTED FILE[0m: C:\Users\hirue\Documents\JS Projects\Security-Project\v5\backend\SecureServer\data\users.json[0m[0m
+[2025-12-20 16:27:19] [33mNOTICE[0m:   Initial Developer Admin 'master-admin' created.[0m[0m
+[2025-12-20 16:27:19] [33mNOTICE[0m:   Served initial 2FA activation code for developer admin user master-admin.[0m[0m
+[2025-12-20 16:27:36] [35mLOGIN[0m:    Developer Admin user master-admin authenticated.[0m[0m
+[2025-12-20 16:27:45] [35mSTARTUP[0m:  Server starting...[0m[0m
+[2025-12-20 16:27:45] [33mWARNING[0m:  REPLACE_CORRUPTED_FILES is marked as True, this should only be toggled if debugging.[0m[0m
+[2025-12-20 16:27:45] [33mNOTICE[0m:   Created template user for later user creation.[0m[0m
+[2025-12-20 16:27:45] [32mINFO[0m:     Started server process [38196][0m[0m
+[2025-12-20 16:27:45] [32mINFO[0m:     Waiting for application startup.[0m[0m
+[2025-12-20 16:27:45] [32mINFO[0m:     Application startup complete.[0m[0m
+[2025-12-20 16:27:46] [32mINFO[0m:     Shutting down[0m[0m
+[2025-12-20 16:27:46] [32mINFO[0m:     Waiting for application shutdown.[0m[0m
+[2025-12-20 16:27:46] [32mINFO[0m:     Application shutdown complete.[0m[0m
+[2025-12-20 16:27:46] [32mINFO[0m:     Finished server process [38196][0m[0m
+[2025-12-20 16:27:46] [35mSHUTDOWN[0m: Received shutdown signal. Cleaning up...[0m[0m
+[2025-12-20 16:27:46] [35mSHUTDOWN[0m: Cleanup complete. Shutting down.[0m[0m
+[2025-12-20 16:27:48] [36mCOMMAND[0m:  master-admin requested user list.[0m[0m
+[2025-12-20 16:27:51] [36mCOMMAND[0m:  master-admin requested list of failed attempts.[0m[0m
+[2025-12-20 16:27:52] [36mCOMMAND[0m:  master-admin requested list of active sessions[0m[0m
+[2025-12-20 16:27:54] [36mCOMMAND[0m:  master-admin requested list of failed attempts.[0m[0m
+[2025-12-20 16:28:01] [36mCOMMAND[0m:  master-admin requested user list.[0m[0m
+[2025-12-20 16:28:22] [35mSTARTUP[0m:  Server starting...[0m[0m
+[2025-12-20 16:28:22] [33mWARNING[0m:  REPLACE_CORRUPTED_FILES is marked as True, this should only be toggled if debugging.[0m[0m
+[2025-12-20 16:28:22] [32mINFO[0m:     Started server process [36476][0m[0m
+[2025-12-20 16:28:22] [32mINFO[0m:     Waiting for application startup.[0m[0m
+[2025-12-20 16:28:22] [32mINFO[0m:     Application startup complete.[0m[0m
+[2025-12-20 16:28:24] [35mSIGNUP[0m:   Successful signup for new user hiruevan. Not an admin.[0m[0m
+[2025-12-20 16:28:24] [32mINFO[0m:     127.0.0.1:49189 - "POST /signup HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:28:27] [33mNOTICE[0m:   Sent user hiruevan 2FA activation code.[0m[0m
+[2025-12-20 16:28:27] [32mINFO[0m:     127.0.0.1:49189 - "POST /login HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:28:40] [35mUPDATE[0m:   2FA activation successful for hiruevan.[0m[0m
+[2025-12-20 16:28:40] [35mLOGIN[0m:    Successful login for user hiruevan. Served token ***959c.[0m[0m
+[2025-12-20 16:28:40] [32mINFO[0m:     127.0.0.1:54053 - "POST /login HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:28:42] [35mUPDATE[0m:   User hiruevan requested personal info.[0m[0m
+[2025-12-20 16:28:42] [32mINFO[0m:     127.0.0.1:54053 - "GET /get_personal_information HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:28:42] [32mINFO[0m:     127.0.0.1:54053 - "GET /get_all_users HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:28:44] [36mCOMMAND[0m:  master-admin requested list of active sessions[0m[0m
+[2025-12-20 16:29:11] [35mPASSWORD CHANGE[0m: Password successfully changed for user hiruevan. Vault key re-wrapped.[0m[0m
+[2025-12-20 16:29:11] [35mLOGOUT[0m:   User hiruevan logged out and thier token was removed.[0m[0m
+[2025-12-20 16:29:11] [32mINFO[0m:     127.0.0.1:56191 - "POST /change_password HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:29:16] [35mUPDATE[0m:   Prompted 2FA OTP for user hiruevan.[0m[0m
+[2025-12-20 16:29:16] [32mINFO[0m:     127.0.0.1:56191 - "POST /login HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:29:28] [35mLOGIN[0m:    Successful login for user hiruevan. Served token ***a3c0.[0m[0m
+[2025-12-20 16:29:28] [32mINFO[0m:     127.0.0.1:51391 - "POST /login HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:29:30] [35mUPDATE[0m:   User hiruevan requested personal info.[0m[0m
+[2025-12-20 16:29:30] [32mINFO[0m:     127.0.0.1:51391 - "GET /get_personal_information HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:29:30] [32mINFO[0m:     127.0.0.1:51391 - "GET /get_all_users HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:29:33] [35mLOGOUT[0m:   User hiruevan logged out and thier token was removed.[0m[0m
+[2025-12-20 16:29:33] [32mINFO[0m:     127.0.0.1:51391 - "POST /logout HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:29:35] [35mUPDATE[0m:   Prompted 2FA OTP for user hiruevan.[0m[0m
+[2025-12-20 16:29:35] [32mINFO[0m:     127.0.0.1:51391 - "POST /login HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:29:42] [35mLOGIN[0m:    Successful login for user hiruevan. Served token ***c6fc.[0m[0m
+[2025-12-20 16:29:42] [32mINFO[0m:     127.0.0.1:52213 - "POST /login HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:29:43] [35mUPDATE[0m:   User hiruevan requested personal info.[0m[0m
+[2025-12-20 16:29:43] [32mINFO[0m:     127.0.0.1:52213 - "GET /get_personal_information HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:29:44] [32mINFO[0m:     127.0.0.1:52213 - "GET /get_all_users HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:30:01] [35mSECURITY[0m: Generated new vault master key for hiruevan.[0m[0m
+[2025-12-20 16:30:01] [35mUPDATE[0m:   User hiruevan updated their vault (encrypted).[0m[0m
+[2025-12-20 16:30:01] [32mINFO[0m:     127.0.0.1:59761 - "POST /set_vault_information HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:30:03] [36mCOMMAND[0m:  master-admin requested user list.[0m[0m
+[2025-12-20 16:30:08] [36mCOMMAND[0m:  master-admin promoted user hiruevan to app admin.[0m[0m
+[2025-12-20 16:30:09] [36mCOMMAND[0m:  master-admin requested user list.[0m[0m
+[2025-12-20 16:30:10] [32mINFO[0m:     127.0.0.1:51537 - "GET /dashboard.html HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:30:10] [32mINFO[0m:     127.0.0.1:51537 - "GET /style.css HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:30:10] [32mINFO[0m:     127.0.0.1:54227 - "GET /SecureServer/helpers.js HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:30:10] [32mINFO[0m:     127.0.0.1:51537 - "GET /code/app.js HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:30:10] [35mUPDATE[0m:   User hiruevan requested personal info.[0m[0m
+[2025-12-20 16:30:10] [32mINFO[0m:     127.0.0.1:51537 - "GET /get_personal_information HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:30:10] [32mINFO[0m:     127.0.0.1:54227 - "GET /favicon.ico HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:30:10] [36mADMIN ACTION[0m: Admin hiruevan retrieved all user data safely.[0m[0m
+[2025-12-20 16:30:10] [32mINFO[0m:     127.0.0.1:54227 - "GET /get_all_users HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:30:36] [36mCOMMAND[0m:  master-admin froze all actions for user hiruevan.[0m[0m
+[2025-12-20 16:30:37] [36mCOMMAND[0m:  master-admin requested user list.[0m[0m
+[2025-12-20 16:30:39] [33mSECURITY NOTICE[0m: Frozen user tried to log in to webapp: hiruevan[0m[0m
+[2025-12-20 16:30:39] [32mINFO[0m:     127.0.0.1:56707 - "POST /logout HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:30:41] [33mSECURITY NOTICE[0m: Frozen user tried to log in to webapp: hiruevan[0m[0m
+[2025-12-20 16:30:41] [32mINFO[0m:     127.0.0.1:56707 - "POST /login HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:30:46] [36mCOMMAND[0m:  master-admin unfroze available actions for user hiruevan.[0m[0m
+[2025-12-20 16:30:47] [36mCOMMAND[0m:  master-admin requested user list.[0m[0m
+[2025-12-20 16:30:47] [35mUPDATE[0m:   Prompted 2FA OTP for user hiruevan.[0m[0m
+[2025-12-20 16:30:47] [32mINFO[0m:     127.0.0.1:50965 - "POST /login HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:30:49] [32mINFO[0m:     127.0.0.1:50965 - "GET /get_all_users HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:30:51] [32mINFO[0m:     127.0.0.1:50965 - "GET /dashboard.html HTTP/1.1"[36m 304 - Unknown[0m
+[2025-12-20 16:30:51] [32mINFO[0m:     127.0.0.1:50965 - "GET /get_personal_information HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:30:51] [32mINFO[0m:     127.0.0.1:50965 - "GET /get_all_users HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:30:57] [36mCOMMAND[0m:  master-admin requested list of active sessions[0m[0m
+[2025-12-20 16:31:05] [35mUPDATE[0m:   Prompted 2FA OTP for user hiruevan.[0m[0m
+[2025-12-20 16:31:05] [32mINFO[0m:     127.0.0.1:50868 - "POST /login HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:31:17] [35mLOGIN[0m:    Successful login for user hiruevan. Served token ***f2fa.[0m[0m
+[2025-12-20 16:31:17] [32mINFO[0m:     127.0.0.1:51048 - "POST /login HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:31:19] [35mUPDATE[0m:   User hiruevan requested personal info.[0m[0m
+[2025-12-20 16:31:19] [32mINFO[0m:     127.0.0.1:51048 - "GET /get_personal_information HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:31:19] [36mADMIN ACTION[0m: Admin hiruevan retrieved all user data safely.[0m[0m
+[2025-12-20 16:31:19] [32mINFO[0m:     127.0.0.1:51048 - "GET /get_all_users HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:31:19] [36mCOMMAND[0m:  master-admin requested list of active sessions[0m[0m
+[2025-12-20 16:31:24] [35mLOGOUT[0m:   User hiruevan logged out and thier token was removed.[0m[0m
+[2025-12-20 16:31:24] [32mINFO[0m:     127.0.0.1:51048 - "POST /logout HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:31:25] [36mCOMMAND[0m:  master-admin requested list of active sessions[0m[0m
+[2025-12-20 16:31:57] [36mCOMMAND[0m:  master-admin created a new user: 'dad' (defaults from template).[0m[0m
+[2025-12-20 16:33:31] [35mLOGOUT[0m:   Dev Admin master-admin logged out 1 session(s) for self.[0m[0m
+[2025-12-20 16:33:39] [33mNOTICE[0m:   Served initial 2FA activation code for developer admin user dad.[0m[0m
+[2025-12-20 16:33:52] [35mLOGIN[0m:    Developer Admin user dad authenticated.[0m[0m
+[2025-12-20 16:34:11] [35mLOGOUT[0m:   Dev Admin dad logged out 1 session(s) for self.[0m[0m
+[2025-12-20 16:34:29] [35mUPDATE[0m:   Prompted 2FA OTP for user dad.[0m[0m
+[2025-12-20 16:34:29] [32mINFO[0m:     127.0.0.1:62698 - "POST /login HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:34:38] [35mLOGIN[0m:    Successful login for user dad. Served token ***093a.[0m[0m
+[2025-12-20 16:34:38] [32mINFO[0m:     127.0.0.1:52687 - "POST /login HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:34:40] [35mUPDATE[0m:   User dad requested personal info.[0m[0m
+[2025-12-20 16:34:40] [32mINFO[0m:     127.0.0.1:52687 - "GET /get_personal_information HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:34:41] [32mINFO[0m:     127.0.0.1:52687 - "GET /get_all_users HTTP/1.1"[32m 200 - OK[0m
+[2025-12-20 16:34:46] [35mLOGOUT[0m:   User dad logged out and thier token was removed.[0m[0m
+[2025-12-20 16:34:46] [32mINFO[0m:     127.0.0.1:52687 - "POST /logout HTTP/1.1"[32m 200 - OK[0m
+[2025-12-22 14:33:34] [32mINFO[0m:     127.0.0.1:57123 - "GET /site.webmanifest HTTP/1.1"[36m 304 - Unknown[0m
+[2026-02-03 19:30:53] [33mNOTICE[0m:   Prompted Developer Admin user master-admin for 2fa.[0m[0m
+[2026-02-03 19:31:06] [33mSECURITY NOTICE[0m: Failed 2FA authentication for developer admin user master-admin.[0m[0m
+[2026-02-03 19:31:18] [33mCORRUPTED ENCRYPTED FILE[0m: C:\Users\hirue\Documents\JS Projects\Security-Project\v6\backend\SecureServer\data\users.json (Expecting value: line 1 column 1 (char 0))[0m[0m
+[2026-02-03 19:31:18] [33mRESETTING ENCRYPTED FILE[0m: C:\Users\hirue\Documents\JS Projects\Security-Project\v6\backend\SecureServer\data\users.json[0m[0m
+[2026-02-03 19:31:19] [33mNOTICE[0m:   Initial Developer Admin 'master-admin' created.[0m[0m
+[2026-02-03 19:31:19] [33mNOTICE[0m:   Served initial 2FA activation code for developer admin user master-admin.[0m[0m
+[2026-02-03 19:31:53] [35mLOGIN[0m:    Developer Admin user master-admin authenticated.[0m[0m
+[2026-02-03 19:32:03] [35mLOGOUT[0m:   Dev Admin master-admin logged out 1 session(s) for self.[0m[0m
+[2026-02-03 19:32:12] [33mNOTICE[0m:   Prompted Developer Admin user master-admin for 2fa.[0m[0m
+[2026-02-03 19:32:16] [35mLOGIN[0m:    Developer Admin user master-admin authenticated.[0m[0m
+[2026-02-03 19:32:21] [36mCOMMAND[0m:  master-admin requested user list.[0m[0m
+[2026-02-03 19:32:34] [31mERROR[0m:    master-admin tried to create a user, but the template user was not found (try restarting the server).[0m[0m
+[2026-02-03 19:32:50] [35mLOGOUT[0m:   Dev Admin master-admin logged out 1 session(s) for self.[0m[0m
+[2026-02-03 19:54:15] [33mNOTICE[0m:   Prompted Developer Admin user master-admin for 2fa.[0m[0m
+[2026-02-03 19:54:24] [35mLOGIN[0m:    Developer Admin user master-admin authenticated.[0m[0m
+[2026-02-03 19:54:30] [35mSTARTUP[0m:  Server starting...[0m[0m
+[2026-02-03 19:54:30] [33mNOTICE[0m:   Created template user for later user creation.[0m[0m
+[2026-02-03 19:54:31] [32mINFO[0m:     Started server process [9364][0m[0m
+[2026-02-03 19:54:31] [32mINFO[0m:     Waiting for application startup.[0m[0m
+[2026-02-03 19:54:31] [32mINFO[0m:     Application startup complete.[0m[0m
+[2026-02-03 19:54:37] [32mINFO[0m:     127.0.0.1:60993 - "GET / HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:54:37] [32mINFO[0m:     127.0.0.1:60993 - "GET /style.css HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:54:37] [32mINFO[0m:     127.0.0.1:58608 - "GET /code/index.js HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:54:37] [32mINFO[0m:     127.0.0.1:60993 - "GET /favicon.ico HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:54:37] [32mINFO[0m:     127.0.0.1:56589 - "GET /site.webmanifest HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:54:42] [32mINFO[0m:     127.0.0.1:52305 - "GET /login.html HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:54:42] [32mINFO[0m:     127.0.0.1:52305 - "GET /SecureServer/helpers.js HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:54:42] [32mINFO[0m:     127.0.0.1:52305 - "GET /SecureServer/qrCode.js HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:54:42] [32mINFO[0m:     127.0.0.1:52305 - "GET /code/login.js HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:54:44] [36mCOMMAND[0m:  master-admin requested user list.[0m[0m
+[2026-02-03 19:54:49] [32mINFO[0m:     127.0.0.1:57460 - "GET /signup.html HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:54:49] [32mINFO[0m:     127.0.0.1:57460 - "GET /code/signup.js HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:55:05] [35mSIGNUP[0m:   Successful signup for new user hiruevan. Not an admin.[0m[0m
+[2026-02-03 19:55:05] [32mINFO[0m:     127.0.0.1:63947 - "POST /signup HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:55:08] [35mLOGIN[0m:    Successful login for user hiruevan. Served token ***bed1.[0m[0m
+[2026-02-03 19:55:08] [32mINFO[0m:     127.0.0.1:63947 - "POST /login HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:55:10] [32mINFO[0m:     127.0.0.1:63947 - "GET /dashboard.html HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:55:10] [32mINFO[0m:     127.0.0.1:63947 - "GET /code/app.js HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:55:10] [35mUPDATE[0m:   User hiruevan requested personal info.[0m[0m
+[2026-02-03 19:55:10] [32mINFO[0m:     127.0.0.1:63947 - "GET /get_personal_information HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:55:10] [32mINFO[0m:     127.0.0.1:63947 - "GET /get_all_users HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:55:25] [35mSECURITY[0m: Generated new vault master key for hiruevan.[0m[0m
+[2026-02-03 19:55:25] [35mUPDATE[0m:   User hiruevan updated their vault (encrypted).[0m[0m
+[2026-02-03 19:55:25] [32mINFO[0m:     127.0.0.1:54184 - "POST /set_vault_information HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:55:31] [35mUPDATE[0m:   User hiruevan updated their vault (encrypted).[0m[0m
+[2026-02-03 19:55:31] [32mINFO[0m:     127.0.0.1:62452 - "POST /set_vault_information HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:55:33] [35mLOGOUT[0m:   User hiruevan logged out and thier token was removed.[0m[0m
+[2026-02-03 19:55:33] [32mINFO[0m:     127.0.0.1:62452 - "POST /logout HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:55:36] [35mLOGIN[0m:    Successful login for user hiruevan. Served token ***3c88.[0m[0m
+[2026-02-03 19:55:36] [32mINFO[0m:     127.0.0.1:62452 - "POST /login HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:55:38] [35mUPDATE[0m:   User hiruevan requested personal info.[0m[0m
+[2026-02-03 19:55:38] [32mINFO[0m:     127.0.0.1:62452 - "GET /get_personal_information HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:55:38] [32mINFO[0m:     127.0.0.1:62452 - "GET /get_all_users HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:55:43] [36mCOMMAND[0m:  master-admin requested user list.[0m[0m
+[2026-02-03 19:55:55] [35mLOGOUT[0m:   Dev Admin master-admin logged out 1 session(s) for self.[0m[0m
+[2026-02-03 19:56:47] [33mNOTICE[0m:   Prompted Developer Admin user master-admin for 2fa.[0m[0m
+[2026-02-03 19:56:51] [35mLOGIN[0m:    Developer Admin user master-admin authenticated.[0m[0m
+[2026-02-03 19:56:54] [32mINFO[0m:     Shutting down[0m[0m
+[2026-02-03 19:56:55] [32mINFO[0m:     Waiting for application shutdown.[0m[0m
+[2026-02-03 19:56:55] [32mINFO[0m:     Application shutdown complete.[0m[0m
+[2026-02-03 19:56:55] [32mINFO[0m:     Finished server process [9364][0m[0m
+[2026-02-03 19:56:55] [35mSHUTDOWN[0m: Received shutdown signal. Cleaning up...[0m[0m
+[2026-02-03 19:56:55] [35mSHUTDOWN[0m: Cleanup complete. Shutting down.[0m[0m
+[2026-02-03 19:56:57] [35mSTARTUP[0m:  Server starting...[0m[0m
+[2026-02-03 19:56:57] [32mINFO[0m:     Started server process [5488][0m[0m
+[2026-02-03 19:56:57] [32mINFO[0m:     Waiting for application startup.[0m[0m
+[2026-02-03 19:56:57] [32mINFO[0m:     Application startup complete.[0m[0m
+[2026-02-03 19:57:04] [32mINFO[0m:     127.0.0.1:50584 - "POST /logout HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:57:25] [36mCOMMAND[0m:  master-admin requested user list.[0m[0m
+[2026-02-03 19:57:44] [35mLOGOUT[0m:   Dev Admin master-admin logged out 1 session(s) for self.[0m[0m
+[2026-02-03 19:57:48] [32mINFO[0m:     127.0.0.1:50134 - "GET /login.html HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:57:48] [32mINFO[0m:     127.0.0.1:50134 - "GET /style.css HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:57:48] [32mINFO[0m:     127.0.0.1:50134 - "GET /SecureServer/helpers.js HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:57:48] [32mINFO[0m:     127.0.0.1:50134 - "GET /SecureServer/qrCode.js HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:57:48] [32mINFO[0m:     127.0.0.1:50134 - "GET /code/login.js HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:57:48] [32mINFO[0m:     127.0.0.1:50134 - "GET /favicon.ico HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:57:48] [32mINFO[0m:     127.0.0.1:57230 - "GET /site.webmanifest HTTP/1.1"[32m 200 - OK[0m
+[2026-02-03 19:57:59] [33mNOTICE[0m:   Prompted Developer Admin user master-admin for 2fa.[0m[0m
+[2026-02-03 19:58:06] [35mLOGIN[0m:    Developer Admin user master-admin authenticated.[0m[0m
+[2026-02-03 19:58:08] [32mINFO[0m:     Shutting down[0m[0m
+[2026-02-03 19:58:08] [32mINFO[0m:     Waiting for application shutdown.[0m[0m
+[2026-02-03 19:58:08] [32mINFO[0m:     Application shutdown complete.[0m[0m
+[2026-02-03 19:58:08] [32mINFO[0m:     Finished server process [5488][0m[0m
+[2026-02-03 19:58:08] [35mSHUTDOWN[0m: Received shutdown signal. Cleaning up...[0m[0m
+[2026-02-03 19:58:08] [35mSHUTDOWN[0m: Cleanup complete. Shutting down.[0m[0m
+[2026-02-03 19:58:10] [35mLOGOUT[0m:   Dev Admin master-admin logged out 1 session(s) for self.[0m[0m
+[2026-02-03 20:01:15] [33mNOTICE[0m:   Prompted Developer Admin user master-admin for 2fa.[0m[0m
+[2026-02-03 20:01:21] [35mLOGIN[0m:    Developer Admin user master-admin authenticated.[0m[0m
+[2026-02-03 20:01:24] [36mCOMMAND[0m:  master-admin requested user list.[0m[0m
+[2026-02-03 20:01:31] [36mCOMMAND[0m:  master-admin requested list of active sessions[0m[0m
+[2026-02-03 20:01:44] [36mCOMMAND[0m:  master-admin logged out all sessions.[0m[0m
+[2026-02-03 20:01:45] [33mSECURITY NOTICE[0m: Failed session fetch for admin user session b46b23d6-336c-4f9b-8843-d6e8373283d3.[0m[0m
+[2026-02-03 20:01:54] [33mNOTICE[0m:   Prompted Developer Admin user master-admin for 2fa.[0m[0m
+[2026-02-03 20:02:05] [35mLOGIN[0m:    Developer Admin user master-admin authenticated.[0m[0m
+[2026-02-03 20:02:09] [36mCOMMAND[0m:  master-admin requested user list.[0m[0m
+[2026-02-03 20:02:14] [36mCOMMAND[0m:  master-admin requested list of active sessions[0m[0m
+[2026-02-03 20:02:17] [36mCOMMAND[0m:  master-admin requested list of failed attempts.[0m[0m
+[2026-02-03 20:02:19] [36mCOMMAND[0m:  master-admin requested user list.[0m[0m
+[2026-02-03 20:02:23] [35mLOGOUT[0m:   Dev Admin master-admin logged out 1 session(s) for self.[0m[0m
+[2026-02-04 15:31:49] [33mNOTICE[0m:   Prompted Developer Admin user master-admin for 2fa.[0m[0m
+[2026-02-04 15:32:05] [35mLOGIN[0m:    Developer Admin user master-admin authenticated.[0m[0m
+[2026-02-04 15:35:01] [36mCOMMAND[0m:  master-admin requested user list.[0m[0m
+[2026-02-04 15:35:11] [35mLOGOUT[0m:   Dev Admin master-admin logged out 1 session(s) for self.[0m[0m

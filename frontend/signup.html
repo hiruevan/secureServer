@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | Vault System</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <h2>Sign Up</h2>
+    <form id="signup-form">
+      <input type="text" id="username" name="username" placeholder="Username" required>
+      <input type="password" id="password" name="password" placeholder="Password" required>
+      <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+      <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+      <!-- <input type="email" id="email" name="email" placeholder="Email" required> -->
+      <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+    <p id="signup-message"></p>
+  </div>
+  <script src="SecureServer/helpers.js"></script>
+  <script src="code/signup.js"></script>
+</body>
+</html>
