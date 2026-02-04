@@ -2,7 +2,7 @@ import os, time, pyotp, uuid, sys, copy
 
 from functools import wraps
 
-from SecureServer.code.token_handling import verify_csrf, require_token, safe_token_log, get_new_token, remove_all_tokens
+from SecureServer.code.token_handling import verify_csrf, require_token, truncate_log, get_new_token, remove_all_tokens
 from SecureServer.code.logs import server_log
 from SecureServer.code.file_handling import load_failed_attempts, save_failed_attempts, load_users, save_users, load_encrypted_json, write_encrypted_json
 from SecureServer.code.encryption import verify_pw, hash_pw
@@ -344,7 +344,7 @@ class SecureApp:
 
                     # --- Generate token & cookies ---
                     token, key, csrf = get_new_token(user["id"], data.password, TOKEN_AGE)
-                    server_log("LOGIN", f"Successful login for user {data.username}. Served token {safe_token_log(token)}.")
+                    server_log("LOGIN", f"Successful login for user {data.username}. Served token {truncate_log(token)}.")
 
                     response = JSONResponse({"success": True, "message": "Successfully logged in."})
                     response.set_cookie(
@@ -683,4 +683,5 @@ class SecureApp:
         
         self.database.log("SHUTDOWN", "Cleanup complete. Shutting down.")
         print("[SHUTDOWN] Cleanup complete. Shutting down.")
+
         sys.exit(0)
