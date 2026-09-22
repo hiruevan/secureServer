@@ -3,7 +3,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from SecureServer.code.file_handling import load_failed_attempts, save_failed_attempts, load_users, save_users
 from SecureServer.code.logs import server_log
-from SecureServer.adminPortal.adminlogin import authenticate_session
+from SecureServer.adminPortal.adminlogin import authenticate_session, require_admin, require_root
 
 
 if __name__ == "__main__":
@@ -18,6 +18,8 @@ if __name__ == "__main__":
 
     # ---- Auth ----
     user = authenticate_session(session_id)
+    require_admin(user)
+    require_root(user)
     if not user:
         print("Invalid session", file=sys.stderr)
         sys.exit(1)
