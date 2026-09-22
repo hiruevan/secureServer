@@ -168,7 +168,7 @@ class SecureApp:
                             "message": "Authentication Key is required."
                         })
                     
-                    if user.get("freeze", False):
+                    if user.get("frozen", False):
                         server_log("SECURITY NOTICE", f"Frozen user tried to log in to webapp: {user['username']}") 
                         res = JSONResponse({
                             "success": False,
@@ -259,7 +259,7 @@ class SecureApp:
                             "message": f"Account temporarily locked. Try again in {remaining // 60} minutes."
                         })
                     
-                    if user.get("freeze", False):
+                    if user.get("frozen", False):
                         server_log("SECURITY NOTICE", f"Frozen user tried to log in to webapp: {user['username']}") 
                         res = JSONResponse({
                             "success": False,
@@ -303,7 +303,7 @@ class SecureApp:
                     totp = pyotp.TOTP(totp_secret)
 
                     if needs_2fa and not getattr(data, "totp_code", None):
-                        if not user.get("2fa_setup_complete", False):
+                        if not user.get("2fa_set_up_complete", False):
                             totp_uri = totp.provisioning_uri(
                                 name=data.username,
                                 issuer_name=APP_NAME
@@ -332,9 +332,9 @@ class SecureApp:
                             server_log("SECURITY NOTICE", f"Failed 2FA for user {data.username}.")
                             return JSONResponse({"success": False, "message": "Invalid 2FA code."})
                         
-                        if needs_2fa and not user.get("2fa_setup_complete", False):
+                        if needs_2fa and not user.get("2fa_set_up_complete", False):
                             server_log("UPDATE", f"2FA activation successful for {data.username}.")
-                            user["2fa_setup_complete"] = True
+                            user["2fa_set_up_complete"] = True
                             save_users(users)
 
                     # --- Successful login ---
