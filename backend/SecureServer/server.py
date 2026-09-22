@@ -110,13 +110,7 @@ class SecureServer:
     
     def _generate_unique_char_string(self, length: int) -> str:
         characters = string.ascii_letters + string.digits
-        
-        # Check if the requested length is possible with the available characters
-        if length > len(characters):
-            return "Error: Length requested is more than available unique characters."
-
-        # Randomly sample unique characters for the specified length and join them
-        unique_string = ''.join(random.sample(characters, k=length))
+        return "".join(secrets.choice(characters) for _ in range(length))
         
         return unique_string
     def _cleanup_pid(self):
