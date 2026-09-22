@@ -21,6 +21,18 @@ def authenticate_session(session: str):
     
     return user # No extra logs, as other files will handle that
 
+def require_admin(user):
+    if not user or not user.get("dev_admin", False):
+        print("Developer admin privileges required.", file=sys.stderr)
+        sys.exit(1)
+
+    return user
+
+def require_root(user):
+    if not user or not user.get("root_auth", False):
+        print("Root privileges required.", file=sys.stderr)
+        sys.exit(1)
+
 
 def get_totp_uri(username: str, secret: str) -> str:
     # Label = issuer:username
