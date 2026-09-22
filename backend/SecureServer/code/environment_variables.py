@@ -134,7 +134,7 @@ SSL_CIPHERS = get_str_env("SSL_CIPHERS", "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_PO
 ALLOWED_HOSTS = get_list_env("ALLOWED_HOSTS", ["localhost", "127.0.0.1", "0.0.0.0"])
 
 # --- Authentication & Security ---
-REPLACE_CORRUPTED_FILES = get_bool_env("REPLACE_CORRUPTED_FILES", True)  # Allow rewriting corrupted encrypted files
+REPLACE_CORRUPTED_FILES = get_bool_env("REPLACE_CORRUPTED_FILES", False)  # Allow rewriting corrupted encrypted files (default=false)
 USE_HTTPS = get_bool_env("USE_HTTPS", False)  # Force HTTPS in production
 LOCKOUT_LOGIN_WINDOW = get_int_env("LOCKOUT_LOGIN_WINDOW", 900)  # Lockout duration in seconds
 PW_CHANGE_AUTH_WINDOW = get_int_env("PW_CHANGE_AUTH_WINDOW", 120)  # Password change re-authentication time window in seconds
