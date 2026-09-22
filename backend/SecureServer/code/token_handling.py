@@ -121,7 +121,8 @@ def require_token(request: Request):
     except InvalidTag:
         return {"success": False, "message": "Invalid authentication key (decryption failed)."}
     except Exception as e:
-        return {"success": False, "message": f"Invalid authentication key (unexpected error: {str(e)})"}
+        server_log("ERROR", f"Authentication key error: {type(e).__name__}")
+        return {"success": False, "message": f"Invalid authentication key (internal server error)."}
 
     return {
         "success": True,
