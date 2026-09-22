@@ -176,7 +176,7 @@ class SecureApp:
                         })
                         res.delete_cookie("auth_token")
                         res.delete_cookie("auth_key")
-                        res.delete_cookie("csrf_key")
+                        res.delete_cookie("csrf_token")
                         return res
 
                     # ---- Admin Required ----
@@ -267,7 +267,7 @@ class SecureApp:
                         })
                         res.delete_cookie("auth_token")
                         res.delete_cookie("auth_key")
-                        res.delete_cookie("csrf_key")
+                        res.delete_cookie("csrf_token")
                         return res
                     
                     if user.get("root", False): 
@@ -470,7 +470,7 @@ class SecureApp:
                     response = JSONResponse({"success": True, "message": "Logged out successfully."})
                     response.delete_cookie("auth_token")
                     response.delete_cookie("auth_key")
-                    response.delete_cookie("csrf_key")
+                    response.delete_cookie("csrf_token")
 
                     await func(*args, **kwargs)
 
@@ -545,7 +545,7 @@ class SecureApp:
                     response = JSONResponse({"success": True, "message": "Password successfully changed. All sessions logged out."})
                     response.delete_cookie("auth_token")
                     response.delete_cookie("auth_key")
-                    response.delete_cookie("csrf_key")
+                    response.delete_cookie("csrf_token")
 
                     return response
                 except Exception as e:
