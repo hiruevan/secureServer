@@ -1,4 +1,4 @@
-import ssl, time, sys, signal, os, atexit, pyotp, uuid, string, random
+import ssl, time, sys, signal, os, atexit, pyotp, uuid, string, random, secrets
 from uvicorn import Config, Server
 
 from SecureServer.app import SecureApp
